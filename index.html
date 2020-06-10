@@ -67,6 +67,21 @@
   </style>
 
   <script>
+    //   select all inputs on page (spacing, blur, base color)
+    const inputs = document.querySelectorAll('.controls input');
+    // this returns a NODE list (not an array)
+    // NodeList(3) [input#spacing, input#blur, input#base]
+    // an ARRAY has methods for dealing with an array - map, reduce, etc
+    // node list doesn't come with this perk
+
+    // we can use the forEach() method to iterate over
+
+    function handleUpdate() {
+        console.log(this.value);
+    }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate))
+
   </script>
 
 </body>
