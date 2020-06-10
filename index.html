@@ -77,13 +77,15 @@
     // we can use the forEach() method to iterate over
 
     function handleUpdate() {
-        console.log(this.value);
+        // console.log(this.value);
+        const suffix = this.dataset.sizing;
+        // console.log(this.dataset)
     }
 
     // to account for a click on the page
-    inputs.forEach(input => input.addEventListener('change', handleUpdate))
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
     // we have to account for mouse movement, not just clicks
-    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate))
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
 
 
 
