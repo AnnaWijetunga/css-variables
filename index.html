@@ -78,8 +78,15 @@
 
     function handleUpdate() {
         // console.log(this.value);
-        const suffix = this.dataset.sizing;
+        const suffix = this.dataset.sizing || '';
         // console.log(this.dataset)
+        // console.log(suffix)
+
+        // update the actual variable
+        // select our entire document and set a property of base, spacing and blur
+        console.log(this.name);
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+
     }
 
     // to account for a click on the page
