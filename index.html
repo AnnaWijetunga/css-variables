@@ -22,6 +22,7 @@
 
   <style>
       /* CSS variables */
+      /* CSS variables are relatively new - let's test 'em out here' */
       /* Declare them on some sort of element, here ROOT */
       /* Root is the highlest level you can get, similar to declaring on the HTML element */
       :root {
@@ -91,7 +92,7 @@
 
     // to account for a click on the page
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
-    
+
     // we have to account for mouse movement, not just clicks
     inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
   </script>
